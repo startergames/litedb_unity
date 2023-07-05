@@ -1,0 +1,17 @@
+{
+    "name": "com.startergames.litedb",
+    "version": "1.0.0",
+    "displayName": "LiteDB for unity",
+    "description": "",
+    "unity": "2022.3",
+    "keywords": [
+        "unity",
+        "package",
+        "litedb"
+    ],
+    "author": {
+        "name": "Starter Games",
+        "email": "developer@startergames.com",
+        "url": "https://www.startergames.com"
+    }
+}
