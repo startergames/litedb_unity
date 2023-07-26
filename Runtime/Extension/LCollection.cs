@@ -97,7 +97,8 @@ namespace LiteDB {
                     // Get the method
                     var method = typeof(LDB).GetMethods()
                         .First(m => m.Name == "GetCollection" 
-                                    && m.IsGenericMethod)
+                                    && m.IsGenericMethod
+                                    && m.GetParameters().Length == 2)
                         .MakeGenericMethod(type);
                     // Call it with your parameters
                     var refCollection = method.Invoke(Database, new object[] { bsonRefAttr.Collection, null });
